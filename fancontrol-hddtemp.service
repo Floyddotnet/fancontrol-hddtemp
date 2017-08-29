@@ -1,0 +1,17 @@
+[Unit]
+Description=fancontrol-hddtemp
+After=syslog.target
+
+[Service]
+Type=simple
+WorkingDirectory=/git/fancontrol-hddtemp
+ExecStart=/git/fancontrol-hddtemp/fancontrol-hddtemp.py
+SyslogIdentifier=fancontrol-hddtemp
+StandardOutput=syslog
+StandardError=syslog
+Restart=always
+RestartSec=3
+PIDFile=/var/run/fancontrol-hddtemp.pid
+
+[Install]
+WantedBy=multi-user.target
