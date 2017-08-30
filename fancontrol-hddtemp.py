@@ -7,7 +7,7 @@ import signal
 import datetime
 import atexit
 
-INTERVALL = 1 #seconds
+INTERVALL = 10 #seconds
 DISKS = "ls /dev/sd[a-z]"
 
 PIDFILE="/var/run/fancontrol-hddtemp.pid"
