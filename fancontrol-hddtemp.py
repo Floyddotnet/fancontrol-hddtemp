@@ -113,8 +113,7 @@ def set_fanspeed(temp):
     pwm = int(max(FAN_MIN_PWM, pwm))
     
     fn_write_file(FAN, pwm)
-    print (temp, str(pwm), _FAN_PWM_PER_C)
-
+    #print (temp, str(pwm), _FAN_PWM_PER_C)
 
 try:
     fn_write_pidfile()
