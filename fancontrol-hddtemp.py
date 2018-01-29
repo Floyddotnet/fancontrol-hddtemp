@@ -23,8 +23,8 @@ SENSOR_CPU_MIN_TEMP = 45 #ignore CPU-sensor if lower than this value
 FAN = "/sys/devices/platform/it87.2608/hwmon/hwmon2/pwm2"
 FAN_MIN_PWM=100
 FAN_MAX_PWM=255
-FAN_MIN_TEMP=30
-FAN_MAX_TEMP=40
+FAN_MIN_TEMP=35
+FAN_MAX_TEMP=44
 
 _FAN_PWM_PER_C = (FAN_MAX_PWM-FAN_MIN_PWM) / (FAN_MAX_TEMP-FAN_MIN_TEMP)
 print ("Config FAN_PWM_PER_C: " + str(_FAN_PWM_PER_C))
